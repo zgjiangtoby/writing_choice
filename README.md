@@ -6,7 +6,7 @@ Replay HAI and CoAuthor menus, score exact candidate continuations under three c
 
 ## Environment
 
-Run the commands below in Bash. Use Python 3.11 and a CUDA GPU with enough memory for FP32 inference; the 8B runs used GPUs reporting 49,140 MiB. Keep the batch settings below when comparing the reported results.
+Run the commands below in Bash. Use Python 3.11 and a CUDA GPU with enough memory for FP32 inference. Keep the batch settings below when comparing the reported results.
 
 ```bash
 python -m venv .venv
@@ -69,4 +69,4 @@ python compare_checkpoints.py --base work/analysis_base --instruct work/analysis
   --output work/comparison_checkpoints
 ```
 
-Use batch size 1 for the continuation runs. The shared sentinel is token 151643. Scores are teacher-forced token likelihoods with no generated answer or scored EOS. This compact entry point processes the full input directly; the original computation used contiguous singleton shards. Statistical outputs retain mean and total likelihood views, the four primary comparisons and the two checkpoint contrasts. Fixed-supply cluster draws and paired worker refits are stored separately.
+Use batch size 1 for the continuation runs. Scores are teacher-forced token likelihoods with no generated answer or scored EOS. This compact entry point processes the full input directly; the original computation used contiguous singleton shards. Statistical outputs retain mean and total likelihood views, the four primary comparisons and the two checkpoint contrasts. Fixed-supply cluster draws and paired worker refits are stored separately.
