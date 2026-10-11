@@ -1,4 +1,4 @@
-# Writing choice
+# What Contextual LLM Likelihood Adds to Human Writing Choice
 
 This is the code for *What Contextual LLM Likelihood Adds to Human Writing Choice*.
 
