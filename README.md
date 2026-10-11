@@ -1,6 +1,6 @@
 # Writing choice
 
-Companion code for *What Contextual LLM Likelihood Adds to Human Writing Choice*, manuscript version 11 October 2026 (eight-page main text). Run the commands from this directory.
+This is the code for *What Contextual LLM Likelihood Adds to Human Writing Choice*.
 
 Replay HAI and CoAuthor menus, score exact candidate continuations under three contexts, and fit conditional choice models separately by corpus and condition.
 
